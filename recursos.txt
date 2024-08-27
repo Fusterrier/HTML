@@ -13,3 +13,5 @@ https://www.w3schools.com/css/css_pseudo_elements.asp
 https://dribbble.com/
 
 https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
+
+a ver si ve el cambio
