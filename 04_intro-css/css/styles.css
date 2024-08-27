@@ -1,0 +1,44 @@
+/* etiquetas */
+
+h1 {
+    color: red;
+}
+
+/*prueba colores y fuentes*/
+
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/* Selectores*/
+
+/* id */
+p #primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+
+#segunda-noticia {
+    color: white;
+    font-size: 12pt;
+}
+
+/* clases */
+
+.encabezado {
+    font-size: 50pt;
+    text-transform: uppercase;
+}
+
+/*selector universal*/
+
+*.warning {
+    color: red;
+    background-color: blue;
+}
+/* asi con el selector universal y una clase se estarán seleccionandp todos los que tengan esa clase */
+
+.autor, .fecha, .ubicacion {
+    text-decoration: underline;
+} 

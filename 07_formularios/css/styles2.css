@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/* https://fonts.google.com/selection/embed */
+
+* {
+    font-family: "Ubuntu", sans-serif; ;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column; /*asi ordena en eje de la Y.*/
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    gap: 25px;
+}
+
+.botones {
+    align-self: flex-start;
+    display: flex;
+    gap: 30px;
+}
+
+.google-btn {
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.google-btn picture {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img {
+    width: 75%;
+}
+
+.google-btn span {
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.google-btn:hover {
+    opacity: 0.6;
+}
+
+.twitter-btn {
+    color: black;
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.twitter-btn:hover {
+    background-color: #ddd;
+}
+
+/* video 2 */
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+/* inputs */
+
+.section-inputs {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+}  
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+.section-inputs label {
+    width: 80%;
+}
+
+label input {
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover {
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label input:focus {
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+/* esto no lo detecta mirar porqué */
+
+.chekbox-label {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+.chekbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+.chekbox-label span {
+    font-weight: 400;
+} 
+
+.submit-btn {
+    width: 80%;
+    background-color: #ea4c89;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.75;
+}

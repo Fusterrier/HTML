@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="resultadosHTML.html" action="GET">
+        <div>
+            <label for="nombreUser">Nombre usuario:</label>
+            <input type="text" name="nombreUser" id="nombreUser" required>
+        </div>
+
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="100" step="2" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="fechaNaci">Fecha nacimiento:</label>
+            <input type="date" name="fechaNaci" id="fechaNaci" required>
+        </div>
+
+        <div>
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass" required>
+        </div>
+
+        <div>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- https://developer.mozilla.org/es/docs/Learn/Forms -->
+    <!-- https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types -->
+</body>
+</html>

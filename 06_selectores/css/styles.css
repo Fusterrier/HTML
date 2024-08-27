@@ -1,0 +1,12 @@
+.contenedor p{
+    color: green;
+}
+
+.contenedor #boton-contenedor {
+    color: red;
+}
+
+body section.main .contenedor p{
+    /* asi se tiene tanta precisión que es hasta redundante. */
+    margin: 1px;
+}

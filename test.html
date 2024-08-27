@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <!-- ETIQUETAS DE TEXTO -->
+    <p>
+        <em>texto</em>
+        <br> 
+        <strong>texto</strong> 
+        <br>
+        <mark>texto</mark>
+        <br> 
+        <i>texto</i> 
+        <br>
+        <b>palabra clave</b> 
+        <br> 
+        <u>anotacion</u> 
+        <br>
+        2 <sub>n</sub>
+        <br> 
+        2 <sup>2</sup> 
+        <br>
+        <small>aclaracion pequeña</small> 
+        <br> 
+        <var>variable o incognita</var> 
+        <br>
+        <samp>resultado operacion</samp> 
+        <br> 
+        <kbd>Entrada user</kbd> <br>
+        <dfn>esto es una definicion</dfn> 
+        <br> 
+        <abbr title="">abrev</abbr> 
+        <br>
+        <cite>cita de alguien</cite> 
+        <br> <time>12:00</time> 
+        <br>
+        <code>hello world</code> 
+        <br> 
+        <a href="">Enlace</a> <br>
+        <area shape="circle" coords="" href="" alt="">
+    </p>
+
+    <!-- ETIQUETAS DE AGRUPACION -->
+
+    <p></p>
+    <div></div>
+    <span></span>
+    <hr>
+    <pre>sadasd</pre>
+    <blockquote cite="www.webdelacita.com">Agrupacion de cita</blockquote>
+    <figure>dsf</figure>
+    <figcaption>leyenda ilustracion</figcaption>
+    <main></main>
+    <map name=""></map>
+
+    <!-- ETIQUETAS DE LISTAS -->
+
+    <ul>
+        <li value="1">1</li>
+        <li value="2">2</li>
+    </ul>
+    <ol start="4" reversed type="1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <!-- start y reversed no funcionan cuando el li tiene value -->
+
+    <!-- ETIQUETAS DE TABLAS -->
+
+    <br>
+
+    <table border="">
+
+        <caption>Titulo tabla</caption>
+
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        <colgroup> se utiliza para especificar columnas en una tabla con el proposito
+        de aplicar estilos. Además, se puede utilizar la etiqueta <col> dentro de esta
+        etiqueta, para hacer referencia a columnas individuales.
+
+        https://www.youtube.com/watch?v=m_uXnXPTeD4
+
+        https://developer.mozilla.org/es/docs/Web/HTML/Element/colgroup
+    -->
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #ffc45d;">
+            <col style="background-color: #4169e1;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- ETIQUETAS DE SECCION -->
+
+    <article>Articulo</article>
+    <h1>del h1 hasta el h6</h1>
+    <section>Seccion</section>
+    <nav>Barra navegacion</nav>
+    <aside>Contenido lateral</aside>
+    <header>Encabezado web</header>
+    <footer>Pie pagina</footer>
+    <address>Info de contacto</address>
+
+    <!-- ETIQUETAS DE SCRIPTING -->
+    
+    <script src="" charset="UTF-8" async defer type="">
+        async, carga asincrona
+        defer, aplaza la ejecucion
+        type, formato del archivo
+    </script>
+
+    <noscript>
+        Alternativa sin scripts
+    </noscript>
+
+    <!-- ETIQUETAS DE MULTIMEDIA -->
+
+    <img src="" alt="" width="" height="">
+    <iframe src="" frameborder="0" width="" height="" sandbox=""></iframe> <!-- marco flotante-->
+    <embed src="" type="" width="" height=""> <!-- recurso externo-->
+    <object data="" type="" name="" height="" width=""></object> <!-- recurso externo-->
+    <param name="" value=""> <!-- parametros de object-->
+    <video preload="" mediagroup="" autoplay loop muted controls poster="" width="" height="">
+        <source src="">
+    </video>
+    <audio preload="" mediagroup="" autoplay loop muted controls>
+        <source src="" >
+    </audio>
+    <source src="" type=""> <!-- formatos alternativos -->
+    <picture></picture> <!-- para imagenes jpg, png, svg, webp y gif -->
+    <canvas width="" height=""></canvas> <!-- lienzo para dibujo -->
+
+    <!-- ETIQUETAS DE FORMULARIOS -->
+    <form action="" method="" name="" accept-charset="" autocomplete="on" novalidate target="_blank" enctype="text/plain">
+
+        <label for=""></label> <!-- para leyenda de campo -->
+        <input type="text" value="" >
+        <!-- 
+            --- tipos de inputs ---
+            
+            text
+            hidden
+            search
+            tel
+            url
+            email
+            number
+            range
+            color
+            password
+            file
+            datetime
+            date
+            time
+            week
+            month
+            checkbox
+            radio
+            submit
+            image
+            reset
+            button
+
+            --- atributos de los inputs ---
+
+            value
+            size, tamaño de campo
+            list asocia con id de <datalist>
+            placeholder, sugerencia
+            accept, formatos soportados o MIME
+            alt, texto alternativo
+            src
+            width
+            height
+            autocomplete, on/off
+            cols, numero de columnas
+            rows, numero de filas
+            wrap, soft/hard mantiene saltos
+            label, texto visible
+            <datalist>, lista modificable
+            selected, opcion seleccionada
+            <optgroup>, agrupacion de opciones
+
+            --- restricciones de los campos ---
+
+            -numericos-
+            min
+            max
+            step
+
+            -textuales-
+            minlength
+            maxlength
+            pattern REGEX
+
+            -generales-
+            required
+            disabled
+            readonly, impide editar el campo
+            -->
+
+        <select name="" id="">
+            <option value=""></option>
+        </select>
+
+        <fieldset name=""></fieldset> <!-- agrupacion tematica -->
+        <legend></legend> <!-- es para el fieldset -->
+        <button name="" type="" value="">Boton</button>
+        <keygen name="" keytype="" challenge> <!-- generador de claves -->
+        <details>sdkjlfhnsjkldfhsjfnsjdnfhskjdf</details> <!-- informacion desplegable -->
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+h1 {
+    color: blue !important; 
+}
+
+.h1-clase {
+    color: yellow;
+}
+
+#h1-id {
+    color: darksalmon;
+}
+
+#h1-id.h1-clase {
+    color: brown;
+}
+
+h1#h1-id.h1-clase {
+    color: black;
+}
+
+h1#h1-id\ #h1-otroId.h1-clase {
+    color: red;
+}
+
+/* solamente se sería más especíco si se pusiera el estilo en linea */
+/* 
+mediante la etiqueta important se establece lo más especifico que hay, este será
+el que prevalezca siempre.
+En caso de existir varias de estas etiquetas siempre prevalecerá la más específica
+No obstante, aunque, esto exista hay que evitar el uso de estos operadores o valores
+especiales. ESTO NO HACE EL CODIGO MANTENIBLE
+*/
+
+p {
+    color: red;
+}
